@@ -31,10 +31,10 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('user'),
         ]);
 
-        Boat::create(['color' => 'Rouge']);
-        Boat::create(['color' => 'Bleu']);
-        Boat::create(['color' => 'Vert']);
-        Boat::create(['color' => 'Orange']);
-        Boat::create(['color' => 'Jaune']);
+        Boat::create(['color' => 'Rouge', 'position' => 0]);
+        Boat::create(['color' => 'Jaune', 'position' => 1]);
+        Boat::create(['color' => 'Orange', 'position' => 2]);
+        Boat::create(['color' => 'Vert', 'position' => 3]);
+        Boat::create(['color' => 'Bleu', 'position' => 4]);
     }
 }

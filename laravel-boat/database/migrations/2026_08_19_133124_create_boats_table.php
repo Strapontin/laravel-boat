@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('color');
+            $table->integer('position')->nullable()->unique();
         });
     }
 
