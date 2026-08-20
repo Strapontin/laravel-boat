@@ -10,10 +10,21 @@
 
 <body class="min-h-screen bg-stone-50 text-stone-950 dark:bg-stone-950 dark:text-stone-50">
     <main class="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-        <header class="mb-10 border-b border-stone-200 pb-6 dark:border-stone-800">
-            <p class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-400">Boat club
-            </p>
-            <h1 class="text-3xl font-semibold tracking-tight">Administration des bateaux</h1>
+        <header
+            class="mb-10 flex flex-col gap-4 border-b border-stone-200 pb-6 dark:border-stone-800 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+                <p class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-400">Boat
+                    club
+                </p>
+                <h1 class="text-3xl font-semibold tracking-tight">Administration des bateaux</h1>
+            </div>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit"
+                    class="cursor-pointer border border-stone-300 px-3 py-2 text-xs font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:border-stone-600 dark:hover:bg-stone-800">
+                    Log out
+                </button>
+            </form>
         </header>
 
         <section>

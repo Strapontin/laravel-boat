@@ -19,15 +19,24 @@
                 <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Choose a morning or afternoon slot over the
                     next seven days.</p>
             </div>
-            <div class="flex gap-3 text-xs text-stone-600 dark:text-stone-400">
-                <span class="inline-flex items-center gap-2">
-                    <span class="size-2 rounded-full bg-sky-600"></span>
-                    Available
-                </span>
-                <span class="inline-flex items-center gap-2">
-                    <span class="size-2 rounded-full bg-stone-300 dark:bg-stone-700"></span>
-                    Booked
-                </span>
+            <div class="flex flex-wrap items-center gap-4 text-xs text-stone-600 dark:text-stone-400">
+                <div class="flex gap-3">
+                    <span class="inline-flex items-center gap-2">
+                        <span class="size-2 rounded-full bg-sky-600"></span>
+                        Available
+                    </span>
+                    <span class="inline-flex items-center gap-2">
+                        <span class="size-2 rounded-full bg-stone-300 dark:bg-stone-700"></span>
+                        Booked
+                    </span>
+                </div>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit"
+                        class="cursor-pointer border border-stone-300 px-3 py-2 font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:border-stone-600 dark:hover:bg-stone-800">
+                        Log out
+                    </button>
+                </form>
             </div>
         </header>
 
