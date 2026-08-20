@@ -17,7 +17,7 @@ Route::get('/', function () {
 // '/reservations' for users
 Route::get('/reservations', [ReservationController::class, 'index'])
     ->name('reservations.index')
-    ->middleware('auth');
+    ->middleware(['auth', 'prevent-back-history-cache']);
 Route::post('/reservations', [ReservationController::class, 'store'])
     ->name('reservations.store')
     ->middleware('auth');
