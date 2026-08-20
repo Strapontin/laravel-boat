@@ -48,9 +48,9 @@
         @endif
 
         <section
-            class="overflow-hidden border border-stone-200 bg-white shadow-sm dark:border-stone-800 dark:bg-stone-900">
-            <div class="overflow-x-auto">
-                <div class="min-w-[980px]">
+            class="min-w-0 overflow-hidden border border-stone-200 bg-white shadow-sm dark:border-stone-800 dark:bg-stone-900">
+            <div class="w-full max-w-full overflow-x-auto overflow-y-hidden">
+                <div class="w-max min-w-full">
                     <div
                         class="grid grid-cols-[180px_repeat(14,minmax(65px,1fr))] border-b border-stone-200 bg-stone-100/70 dark:border-stone-800 dark:bg-stone-800/60">
                         <div
