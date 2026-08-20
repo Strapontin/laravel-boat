@@ -12,8 +12,8 @@ class ReservationController extends Controller
     public function index(Request $request)
     {
         $startDate = now()->startOfDay();
-        $dates = collect(range(0, 6))->map(
-            fn (int $offset) => $startDate->copy()->addDays($offset)->toDateString()
+        $dates = collect(range(1, 7))->map(
+            fn(int $offset) => $startDate->copy()->addDays($offset)->toDateString()
         );
 
         $boats = Boat::with([

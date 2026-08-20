@@ -31,13 +31,6 @@
             </div>
         </header>
 
-        @if (session('success'))
-            <div class="mb-6 border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800 dark:border-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-300"
-                role="status">
-                {{ session('success') }}
-            </div>
-        @endif
-
         @if (session('error'))
             <div class="mb-6 border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-900 dark:bg-rose-950/40 dark:text-rose-300"
                 role="alert">
@@ -50,7 +43,7 @@
             <div class="overflow-x-auto">
                 <div class="min-w-[980px]">
                     <div
-                        class="grid grid-cols-[180px_repeat(14,minmax(56px,1fr))] border-b border-stone-200 bg-stone-100/70 dark:border-stone-800 dark:bg-stone-800/60">
+                        class="grid grid-cols-[180px_repeat(14,minmax(65px,1fr))] border-b border-stone-200 bg-stone-100/70 dark:border-stone-800 dark:bg-stone-800/60">
                         <div
                             class="border-r border-stone-200 px-4 py-4 text-xs font-semibold uppercase tracking-wider text-stone-500 dark:border-stone-800 dark:text-stone-400">
                             Boat</div>
@@ -73,7 +66,7 @@
                             $reservations = $boat->reservations->keyBy(fn($reservation) => $reservation->date . '_' . $reservation->slot);
                         @endphp
                         <div
-                            class="grid grid-cols-[180px_repeat(14,minmax(56px,1fr))] border-b border-stone-200 last:border-b-0 dark:border-stone-800">
+                            class="grid grid-cols-[180px_repeat(14,minmax(65px,1fr))] border-b border-stone-200 last:border-b-0 dark:border-stone-800">
                             <div class="flex items-center gap-3 border-r border-stone-200 px-4 py-4 dark:border-stone-800">
                                 <img src="{{ asset('images/Boat-' . ucfirst($boat->color) . '.png') }}"
                                     alt="Bateau {{ $boat->color }}" class="h-10 w-14 shrink-0 object-contain">
@@ -108,6 +101,13 @@
                 </div>
             </div>
         </section>
+
+        @if (session('success'))
+            <div class="mt-6 border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800 dark:border-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-300"
+                role="status">
+                {{ session('success') }}
+            </div>
+        @endif
     </main>
 </body>
 

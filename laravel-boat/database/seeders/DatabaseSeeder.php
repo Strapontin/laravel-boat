@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Boat;
+use App\Models\Reservation;
 
 class DatabaseSeeder extends Seeder
 {
@@ -25,7 +26,7 @@ class DatabaseSeeder extends Seeder
             'is_admin' => true,
         ]);
 
-        User::factory()->create([
+        $user = User::factory()->create([
             'name' => 'user',
             'email' => 'user@user.com',
             'password' => bcrypt('user'),
@@ -36,5 +37,19 @@ class DatabaseSeeder extends Seeder
         Boat::create(['color' => 'Orange', 'position' => 2]);
         Boat::create(['color' => 'Vert', 'position' => 3]);
         Boat::create(['color' => 'Bleu', 'position' => 4]);
+
+        Reservation::create([
+            'user_id' => $user->id,
+            'boat_id' => Boat::where('color', 'Vert')->firstOrFail()->id,
+            'date' => '2026-01-01',
+            'slot' => 'morning',
+        ]);
+
+        Reservation::create([
+            'user_id' => $user->id,
+            'boat_id' => Boat::where('color', 'Rouge')->firstOrFail()->id,
+            'date' => '2027-01-01',
+            'slot' => 'morning',
+        ]);
     }
 }
