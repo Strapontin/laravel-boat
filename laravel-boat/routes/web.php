@@ -26,6 +26,12 @@ Route::post('/reservations', [ReservationController::class, 'store'])
 Route::get('/admin', [AdminDashboardController::class, 'index'])
     ->name('admin.index')
     ->middleware(['auth', 'admin']);
+Route::post('/admin/boats/{boat}/outside', [AdminDashboardController::class, 'moveOutside'])
+    ->name('admin.boats.move-outside')
+    ->middleware(['auth', 'admin']);
+Route::post('/admin/boats/{boat}/inside', [AdminDashboardController::class, 'moveInside'])
+    ->name('admin.boats.move-inside')
+    ->middleware(['auth', 'admin']);
 
 // Route::middleware(['auth', 'verified'])->group(function () {
 //     Route::inertia('dashboard', 'dashboard')->name('dashboard');

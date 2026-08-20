@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Boat extends Model
 {
-    // protected $fillable = ['color'];
+    protected $fillable = ['position'];
 
     /**
      * Un bateau peut avoir plusieurs réservations
