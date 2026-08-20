@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage line-rate="0.80213903743316" branch-rate="0" lines-covered="150" lines-valid="187" branches-covered="0" branches-valid="0" complexity="44" version="0.4" timestamp="1787249307">
+  <sources>
+    <source>/home/mainuser/Documents/Dev/laravel-boat/laravel-boat/app</source>
+  </sources>
+  <packages>
+    <package name="Actions/Fortify/CreateNewUser.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Actions\Fortify\CreateNewUser" filename="Actions/Fortify/CreateNewUser.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="create" signature="array $input" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="22" hits="1"/>
+                <line number="23" hits="1"/>
+                <line number="24" hits="1"/>
+                <line number="25" hits="1"/>
+                <line number="27" hits="1"/>
+                <line number="28" hits="1"/>
+                <line number="29" hits="1"/>
+                <line number="30" hits="1"/>
+                <line number="31" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="1"/>
+            <line number="23" hits="1"/>
+            <line number="24" hits="1"/>
+            <line number="25" hits="1"/>
+            <line number="27" hits="1"/>
+            <line number="28" hits="1"/>
+            <line number="29" hits="1"/>
+            <line number="30" hits="1"/>
+            <line number="31" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Actions/Fortify/ResetUserPassword.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Actions\Fortify\ResetUserPassword" filename="Actions/Fortify/ResetUserPassword.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="reset" signature="User $user, array $input" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="21" hits="1"/>
+                <line number="22" hits="1"/>
+                <line number="23" hits="1"/>
+                <line number="25" hits="1"/>
+                <line number="26" hits="1"/>
+                <line number="27" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="1"/>
+            <line number="22" hits="1"/>
+            <line number="23" hits="1"/>
+            <line number="25" hits="1"/>
+            <line number="26" hits="1"/>
+            <line number="27" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Concerns/PasswordValidationRules.php" line-rate="1" branch-rate="0" complexity="2">
+      <classes>
+        <class name="App\Concerns\PasswordValidationRules" filename="Concerns/PasswordValidationRules.php" line-rate="1" branch-rate="0" complexity="2">
+          <methods>
+            <method name="passwordRules" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="17" hits="4"/>
+              </lines>
+            </method>
+            <method name="currentPasswordRules" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="27" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="4"/>
+            <line number="27" hits="4"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Concerns/ProfileValidationRules.php" line-rate="1" branch-rate="0" complexity="4">
+      <classes>
+        <class name="App\Concerns\ProfileValidationRules" filename="Concerns/ProfileValidationRules.php" line-rate="1" branch-rate="0" complexity="4">
+          <methods>
+            <method name="profileRules" signature="?int $userId" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="18" hits="3"/>
+                <line number="19" hits="3"/>
+                <line number="20" hits="3"/>
+                <line number="21" hits="3"/>
+              </lines>
+            </method>
+            <method name="nameRules" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="31" hits="3"/>
+              </lines>
+            </method>
+            <method name="emailRules" signature="?int $userId" line-rate="1" branch-rate="0" complexity="2">
+              <lines>
+                <line number="41" hits="3"/>
+                <line number="42" hits="3"/>
+                <line number="43" hits="3"/>
+                <line number="44" hits="3"/>
+                <line number="45" hits="3"/>
+                <line number="46" hits="3"/>
+                <line number="47" hits="1"/>
+                <line number="48" hits="3"/>
+                <line number="49" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="3"/>
+            <line number="19" hits="3"/>
+            <line number="20" hits="3"/>
+            <line number="21" hits="3"/>
+            <line number="31" hits="3"/>
+            <line number="41" hits="3"/>
+            <line number="42" hits="3"/>
+            <line number="43" hits="3"/>
+            <line number="44" hits="3"/>
+            <line number="45" hits="3"/>
+            <line number="46" hits="3"/>
+            <line number="47" hits="1"/>
+            <line number="48" hits="3"/>
+            <line number="49" hits="3"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Controllers/AdminDashboardController.php" line-rate="0.88888888888889" branch-rate="0" complexity="3">
+      <classes>
+        <class name="App\Http\Controllers\AdminDashboardController" filename="Http/Controllers/AdminDashboardController.php" line-rate="0.88888888888889" branch-rate="0" complexity="3">
+          <methods>
+            <method name="index" signature="" line-rate="0.86363636363636" branch-rate="0" complexity="1">
+              <lines>
+                <line number="12" hits="1"/>
+                <line number="13" hits="1"/>
+                <line number="14" hits="1"/>
+                <line number="15" hits="1"/>
+                <line number="16" hits="0"/>
+                <line number="17" hits="0"/>
+                <line number="18" hits="0"/>
+                <line number="19" hits="1"/>
+                <line number="20" hits="1"/>
+                <line number="21" hits="1"/>
+                <line number="22" hits="1"/>
+                <line number="23" hits="1"/>
+                <line number="24" hits="1"/>
+                <line number="25" hits="1"/>
+                <line number="26" hits="1"/>
+                <line number="27" hits="1"/>
+                <line number="28" hits="1"/>
+                <line number="29" hits="1"/>
+                <line number="30" hits="1"/>
+                <line number="31" hits="1"/>
+                <line number="32" hits="1"/>
+                <line number="34" hits="1"/>
+              </lines>
+            </method>
+            <method name="moveOutside" signature="Boat $boat" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="39" hits="2"/>
+                <line number="41" hits="2"/>
+              </lines>
+            </method>
+            <method name="moveInside" signature="Boat $boat" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="46" hits="2"/>
+                <line number="48" hits="2"/>
+                <line number="50" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="1"/>
+            <line number="13" hits="1"/>
+            <line number="14" hits="1"/>
+            <line number="15" hits="1"/>
+            <line number="16" hits="0"/>
+            <line number="17" hits="0"/>
+            <line number="18" hits="0"/>
+            <line number="19" hits="1"/>
+            <line number="20" hits="1"/>
+            <line number="21" hits="1"/>
+            <line number="22" hits="1"/>
+            <line number="23" hits="1"/>
+            <line number="24" hits="1"/>
+            <line number="25" hits="1"/>
+            <line number="26" hits="1"/>
+            <line number="27" hits="1"/>
+            <line number="28" hits="1"/>
+            <line number="29" hits="1"/>
+            <line number="30" hits="1"/>
+            <line number="31" hits="1"/>
+            <line number="32" hits="1"/>
+            <line number="34" hits="1"/>
+            <line number="39" hits="2"/>
+            <line number="41" hits="2"/>
+            <line number="46" hits="2"/>
+            <line number="48" hits="2"/>
+            <line number="50" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Controllers/Controller.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Http\Controllers\Controller" filename="Http/Controllers/Controller.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Controllers/ReservationController.php" line-rate="0.31034482758621" branch-rate="0" complexity="3">
+      <classes>
+        <class name="App\Http\Controllers\ReservationController" filename="Http/Controllers/ReservationController.php" line-rate="0.31034482758621" branch-rate="0" complexity="3">
+          <methods>
+            <method name="index" signature="Request $request" line-rate="0.9" branch-rate="0" complexity="1">
+              <lines>
+                <line number="14" hits="1"/>
+                <line number="15" hits="1"/>
+                <line number="16" hits="1"/>
+                <line number="17" hits="1"/>
+                <line number="19" hits="1"/>
+                <line number="20" hits="1"/>
+                <line number="21" hits="0"/>
+                <line number="22" hits="1"/>
+                <line number="23" hits="1"/>
+                <line number="25" hits="1"/>
+              </lines>
+            </method>
+            <method name="store" signature="Request $request" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="31" hits="0"/>
+                <line number="32" hits="0"/>
+                <line number="33" hits="0"/>
+                <line number="34" hits="0"/>
+                <line number="35" hits="0"/>
+                <line number="38" hits="0"/>
+                <line number="39" hits="0"/>
+                <line number="40" hits="0"/>
+                <line number="41" hits="0"/>
+                <line number="43" hits="0"/>
+                <line number="44" hits="0"/>
+                <line number="47" hits="0"/>
+                <line number="48" hits="0"/>
+                <line number="49" hits="0"/>
+                <line number="50" hits="0"/>
+                <line number="51" hits="0"/>
+                <line number="52" hits="0"/>
+                <line number="54" hits="0"/>
+                <line number="55" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="1"/>
+            <line number="15" hits="1"/>
+            <line number="16" hits="1"/>
+            <line number="17" hits="1"/>
+            <line number="19" hits="1"/>
+            <line number="20" hits="1"/>
+            <line number="21" hits="0"/>
+            <line number="22" hits="1"/>
+            <line number="23" hits="1"/>
+            <line number="25" hits="1"/>
+            <line number="31" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="33" hits="0"/>
+            <line number="34" hits="0"/>
+            <line number="35" hits="0"/>
+            <line number="38" hits="0"/>
+            <line number="39" hits="0"/>
+            <line number="40" hits="0"/>
+            <line number="41" hits="0"/>
+            <line number="43" hits="0"/>
+            <line number="44" hits="0"/>
+            <line number="47" hits="0"/>
+            <line number="48" hits="0"/>
+            <line number="49" hits="0"/>
+            <line number="50" hits="0"/>
+            <line number="51" hits="0"/>
+            <line number="52" hits="0"/>
+            <line number="54" hits="0"/>
+            <line number="55" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Controllers/Settings/ProfileController.php" line-rate="1" branch-rate="0" complexity="4">
+      <classes>
+        <class name="App\Http\Controllers\Settings\ProfileController" filename="Http/Controllers/Settings/ProfileController.php" line-rate="1" branch-rate="0" complexity="4">
+          <methods>
+            <method name="edit" signature="Request $request" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="22" hits="1"/>
+                <line number="23" hits="1"/>
+                <line number="24" hits="1"/>
+                <line number="25" hits="1"/>
+              </lines>
+            </method>
+            <method name="update" signature="ProfileUpdateRequest $request" line-rate="1" branch-rate="0" complexity="2">
+              <lines>
+                <line number="33" hits="2"/>
+                <line number="35" hits="2"/>
+                <line number="36" hits="1"/>
+                <line number="39" hits="2"/>
+                <line number="41" hits="2"/>
+                <line number="43" hits="2"/>
+              </lines>
+            </method>
+            <method name="destroy" signature="ProfileDeleteRequest $request" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="51" hits="1"/>
+                <line number="53" hits="1"/>
+                <line number="55" hits="1"/>
+                <line number="57" hits="1"/>
+                <line number="58" hits="1"/>
+                <line number="60" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="1"/>
+            <line number="23" hits="1"/>
+            <line number="24" hits="1"/>
+            <line number="25" hits="1"/>
+            <line number="33" hits="2"/>
+            <line number="35" hits="2"/>
+            <line number="36" hits="1"/>
+            <line number="39" hits="2"/>
+            <line number="41" hits="2"/>
+            <line number="43" hits="2"/>
+            <line number="51" hits="1"/>
+            <line number="53" hits="1"/>
+            <line number="55" hits="1"/>
+            <line number="57" hits="1"/>
+            <line number="58" hits="1"/>
+            <line number="60" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Controllers/Settings/SecurityController.php" line-rate="0.55555555555556" branch-rate="0" complexity="2">
+      <classes>
+        <class name="App\Http\Controllers\Settings\SecurityController" filename="Http/Controllers/Settings/SecurityController.php" line-rate="0.55555555555556" branch-rate="0" complexity="2">
+          <methods>
+            <method name="edit" signature="TwoFactorAuthenticationRequest $request" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="0"/>
+                <line number="21" hits="0"/>
+                <line number="22" hits="0"/>
+                <line number="24" hits="0"/>
+              </lines>
+            </method>
+            <method name="update" signature="PasswordUpdateRequest $request" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="32" hits="1"/>
+                <line number="33" hits="1"/>
+                <line number="34" hits="1"/>
+                <line number="36" hits="1"/>
+                <line number="38" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0"/>
+            <line number="21" hits="0"/>
+            <line number="22" hits="0"/>
+            <line number="24" hits="0"/>
+            <line number="32" hits="1"/>
+            <line number="33" hits="1"/>
+            <line number="34" hits="1"/>
+            <line number="36" hits="1"/>
+            <line number="38" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Middleware/AdminMiddleware.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Http\Middleware\AdminMiddleware" filename="Http/Middleware/AdminMiddleware.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="handle" signature="Request $request, Closure $next" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="18" hits="5"/>
+                <line number="20" hits="5"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="5"/>
+            <line number="20" hits="5"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Middleware/HandleAppearance.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Http\Middleware\HandleAppearance" filename="Http/Middleware/HandleAppearance.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="handle" signature="Request $request, Closure $next" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="19" hits="24"/>
+                <line number="21" hits="24"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="24"/>
+            <line number="21" hits="24"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Middleware/HandleInertiaRequests.php" line-rate="1" branch-rate="0" complexity="3">
+      <classes>
+        <class name="App\Http\Middleware\HandleInertiaRequests" filename="Http/Middleware/HandleInertiaRequests.php" line-rate="1" branch-rate="0" complexity="3">
+          <methods>
+            <method name="version" signature="Request $request" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="26" hits="5"/>
+              </lines>
+            </method>
+            <method name="share" signature="Request $request" line-rate="1" branch-rate="0" complexity="2">
+              <lines>
+                <line number="38" hits="24"/>
+                <line number="39" hits="24"/>
+                <line number="40" hits="24"/>
+                <line number="41" hits="24"/>
+                <line number="42" hits="24"/>
+                <line number="43" hits="24"/>
+                <line number="44" hits="24"/>
+                <line number="45" hits="24"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="5"/>
+            <line number="38" hits="24"/>
+            <line number="39" hits="24"/>
+            <line number="40" hits="24"/>
+            <line number="41" hits="24"/>
+            <line number="42" hits="24"/>
+            <line number="43" hits="24"/>
+            <line number="44" hits="24"/>
+            <line number="45" hits="24"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Middleware/PreventBackHistoryCache.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Http\Middleware\PreventBackHistoryCache" filename="Http/Middleware/PreventBackHistoryCache.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="handle" signature="Request $request, Closure $next" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="13" hits="1"/>
+                <line number="14" hits="1"/>
+                <line number="15" hits="1"/>
+                <line number="16" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="1"/>
+            <line number="14" hits="1"/>
+            <line number="15" hits="1"/>
+            <line number="16" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Requests/Settings/PasswordUpdateRequest.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Http\Requests\Settings\PasswordUpdateRequest" filename="Http/Requests/Settings/PasswordUpdateRequest.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="rules" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="2"/>
+                <line number="21" hits="2"/>
+                <line number="22" hits="2"/>
+                <line number="23" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="2"/>
+            <line number="21" hits="2"/>
+            <line number="22" hits="2"/>
+            <line number="23" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Requests/Settings/ProfileDeleteRequest.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Http\Requests\Settings\ProfileDeleteRequest" filename="Http/Requests/Settings/ProfileDeleteRequest.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="rules" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="2"/>
+                <line number="21" hits="2"/>
+                <line number="22" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="2"/>
+            <line number="21" hits="2"/>
+            <line number="22" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Requests/Settings/ProfileUpdateRequest.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Http\Requests\Settings\ProfileUpdateRequest" filename="Http/Requests/Settings/ProfileUpdateRequest.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="rules" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Http/Requests/Settings/TwoFactorAuthenticationRequest.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Http\Requests\Settings\TwoFactorAuthenticationRequest" filename="Http/Requests/Settings/TwoFactorAuthenticationRequest.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="rules" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Boat.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Models\Boat" filename="Models/Boat.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="reservations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="17" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Reservation.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="App\Models\Reservation" filename="Models/Reservation.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="user" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+            <method name="boat" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="25" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0"/>
+            <line number="25" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/User.php" line-rate="0.8" branch-rate="0" complexity="2">
+      <classes>
+        <class name="App\Models\User" filename="Models/User.php" line-rate="0.8" branch-rate="0" complexity="2">
+          <methods>
+            <method name="casts" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="42" hits="22"/>
+                <line number="43" hits="22"/>
+                <line number="44" hits="22"/>
+                <line number="45" hits="22"/>
+              </lines>
+            </method>
+            <method name="reservations" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="50" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="42" hits="22"/>
+            <line number="43" hits="22"/>
+            <line number="44" hits="22"/>
+            <line number="45" hits="22"/>
+            <line number="50" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Providers/AppServiceProvider.php" line-rate="0.6" branch-rate="0" complexity="4">
+      <classes>
+        <class name="App\Providers\AppServiceProvider" filename="Providers/AppServiceProvider.php" line-rate="0.6" branch-rate="0" complexity="4">
+          <methods>
+            <method name="register" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="19" hits="27"/>
+              </lines>
+            </method>
+            <method name="boot" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="26" hits="27"/>
+              </lines>
+            </method>
+            <method name="configureDefaults" signature="" line-rate="0.53846153846154" branch-rate="0" complexity="2">
+              <lines>
+                <line number="34" hits="27"/>
+                <line number="36" hits="27"/>
+                <line number="37" hits="27"/>
+                <line number="38" hits="27"/>
+                <line number="40" hits="27"/>
+                <line number="41" hits="0"/>
+                <line number="42" hits="0"/>
+                <line number="43" hits="0"/>
+                <line number="44" hits="0"/>
+                <line number="45" hits="0"/>
+                <line number="46" hits="0"/>
+                <line number="47" hits="27"/>
+                <line number="48" hits="27"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="27"/>
+            <line number="26" hits="27"/>
+            <line number="34" hits="27"/>
+            <line number="36" hits="27"/>
+            <line number="37" hits="27"/>
+            <line number="38" hits="27"/>
+            <line number="40" hits="27"/>
+            <line number="41" hits="0"/>
+            <line number="42" hits="0"/>
+            <line number="43" hits="0"/>
+            <line number="44" hits="0"/>
+            <line number="45" hits="0"/>
+            <line number="46" hits="0"/>
+            <line number="47" hits="27"/>
+            <line number="48" hits="27"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Providers/FortifyServiceProvider.php" line-rate="1" branch-rate="0" complexity="5">
+      <classes>
+        <class name="App\Providers\FortifyServiceProvider" filename="Providers/FortifyServiceProvider.php" line-rate="1" branch-rate="0" complexity="5">
+          <methods>
+            <method name="register" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="25" hits="27"/>
+              </lines>
+            </method>
+            <method name="boot" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="32" hits="27"/>
+                <line number="33" hits="27"/>
+                <line number="34" hits="27"/>
+              </lines>
+            </method>
+            <method name="configureActions" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="42" hits="27"/>
+                <line number="43" hits="27"/>
+              </lines>
+            </method>
+            <method name="configureViews" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="51" hits="27"/>
+                <line number="52" hits="27"/>
+                <line number="53" hits="27"/>
+                <line number="54" hits="27"/>
+                <line number="55" hits="27"/>
+                <line number="57" hits="27"/>
+                <line number="58" hits="27"/>
+                <line number="59" hits="27"/>
+                <line number="60" hits="27"/>
+                <line number="61" hits="27"/>
+                <line number="63" hits="27"/>
+                <line number="64" hits="27"/>
+                <line number="65" hits="27"/>
+                <line number="67" hits="27"/>
+                <line number="68" hits="27"/>
+                <line number="69" hits="27"/>
+              </lines>
+            </method>
+            <method name="configureRateLimiting" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="79" hits="27"/>
+                <line number="80" hits="3"/>
+                <line number="82" hits="3"/>
+                <line number="83" hits="27"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="27"/>
+            <line number="32" hits="27"/>
+            <line number="33" hits="27"/>
+            <line number="34" hits="27"/>
+            <line number="42" hits="27"/>
+            <line number="43" hits="27"/>
+            <line number="51" hits="27"/>
+            <line number="52" hits="27"/>
+            <line number="53" hits="27"/>
+            <line number="54" hits="27"/>
+            <line number="55" hits="27"/>
+            <line number="57" hits="27"/>
+            <line number="58" hits="27"/>
+            <line number="59" hits="27"/>
+            <line number="60" hits="27"/>
+            <line number="61" hits="27"/>
+            <line number="63" hits="27"/>
+            <line number="64" hits="27"/>
+            <line number="65" hits="27"/>
+            <line number="67" hits="27"/>
+            <line number="68" hits="27"/>
+            <line number="69" hits="27"/>
+            <line number="79" hits="27"/>
+            <line number="80" hits="3"/>
+            <line number="82" hits="3"/>
+            <line number="83" hits="27"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

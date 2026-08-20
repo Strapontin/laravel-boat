@@ -3,3 +3,6 @@ migrate:
 
 run:
 	composer run dev
+
+coverage: 
+	php artisan test --coverage
