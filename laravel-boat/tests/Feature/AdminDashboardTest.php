@@ -46,6 +46,22 @@ test('the admin dashboard keeps reorganization mode after moving a boat', functi
         ->assertRedirect(route('admin.index', ['reorganize' => 1]));
 });
 
+test('the admin dashboard ranks boats by descending warehouse position', function () {
+    $admin = User::factory()->create(['is_admin' => true]);
+    Boat::forceCreate(['color' => 'Rouge', 'position' => 1]);
+    Boat::forceCreate(['color' => 'Bleu', 'position' => 7]);
+    Boat::forceCreate(['color' => 'Vert', 'position' => 3]);
+
+    $this->actingAs($admin)
+        ->get(route('admin.index'))
+        ->assertOk()
+        ->assertSeeInOrder([
+            'Bateau Bleu',
+            'Bateau Vert',
+            'Bateau Rouge',
+        ]);
+});
+
 test('the admin dashboard shows the lock for reserved boats outside the warehouse', function () {
     $admin = User::factory()->create(['is_admin' => true]);
     $boat = Boat::forceCreate(['color' => 'Rouge', 'position' => null]);
