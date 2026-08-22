@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reservations | {{ config('app.name', 'Laravel') }}</title>
+    <title>Réservations | {{ config('app.name', 'Laravel') }}</title>
     @vite('resources/css/app.css')
 </head>
 
@@ -13,28 +13,29 @@
         <header
             class="mb-8 flex flex-col gap-4 border-b border-stone-200 pb-6 dark:border-stone-800 sm:flex-row sm:items-end sm:justify-between">
             <div>
-                <p class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-400">Boat
-                    club</p>
-                <h1 class="text-3xl font-semibold tracking-tight">Reserve a boat</h1>
-                <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Choose a morning or afternoon slot over the
-                    next seven days.</p>
+                <p class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-400">Club
+                    nautique</p>
+                <h1 class="text-3xl font-semibold tracking-tight">Réserver un bateau</h1>
+                <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Choisissez un créneau le matin ou
+                    l'après-midi
+                    au cours des sept prochains jours.</p>
             </div>
             <div class="flex flex-wrap items-center gap-4 text-xs text-stone-600 dark:text-stone-400">
                 <div class="flex gap-3">
                     <span class="inline-flex items-center gap-2">
                         <span class="size-2 rounded-full bg-sky-600"></span>
-                        Available
+                        Disponible
                     </span>
                     <span class="inline-flex items-center gap-2">
                         <span class="size-2 rounded-full bg-stone-300 dark:bg-stone-700"></span>
-                        Booked
+                        Réservé
                     </span>
                 </div>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <button type="submit"
                         class="cursor-pointer border border-stone-300 px-3 py-2 font-medium text-stone-700 transition hover:border-stone-400 hover:bg-stone-100 dark:border-stone-700 dark:text-stone-300 dark:hover:border-stone-600 dark:hover:bg-stone-800">
-                        Log out
+                        Se déconnecter
                     </button>
                 </form>
             </div>
@@ -55,16 +56,18 @@
                         class="grid grid-cols-[180px_repeat(14,minmax(65px,1fr))] border-b border-stone-200 bg-stone-100/70 dark:border-stone-800 dark:bg-stone-800/60">
                         <div
                             class="border-r border-stone-200 px-4 py-4 text-xs font-semibold uppercase tracking-wider text-stone-500 dark:border-stone-800 dark:text-stone-400">
-                            Boat</div>
+                            Bateau</div>
                         @foreach ($dates as $date)
-                            @foreach (['morning' => 'AM', 'afternoon' => 'PM'] as $slot => $label)
+                            @foreach (['morning' => 'Matin', 'afternoon' => 'Après-midi'] as $slot => $label)
                                 <div
                                     class="border-r border-stone-200 px-2 py-3 text-center last:border-r-0 dark:border-stone-800">
                                     <div class="text-xs font-semibold text-stone-900 dark:text-stone-100">
-                                        {{ \Carbon\Carbon::parse($date)->format('D j') }}</div>
+                                        {{ \Carbon\Carbon::parse($date)->locale('fr')->translatedFormat('D j') }}
+                                    </div>
                                     <div
                                         class="mt-1 text-[10px] font-medium uppercase tracking-wider text-stone-500 dark:text-stone-400">
-                                        {{ $label }}</div>
+                                        {{ $label }}
+                                    </div>
                                 </div>
                             @endforeach
                         @endforeach
@@ -95,8 +98,8 @@
                                             <input type="hidden" name="slot" value="{{ $slot }}">
                                             <button type="submit" @disabled($isBooked)
                                                 class="h-10 w-full border px-1 text-[10px] font-semibold uppercase tracking-wide transition {{ $isBooked ? 'cursor-not-allowed border-stone-200 bg-stone-100 text-stone-400 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-500' : 'cursor-pointer border-sky-200 bg-sky-50 text-sky-700 hover:border-sky-500 hover:bg-sky-600 hover:text-white dark:border-sky-900 dark:bg-sky-950/50 dark:text-sky-300 dark:hover:bg-sky-600 dark:hover:text-white' }}"
-                                                @if ($isBooked) aria-label="Booked" @endif>
-                                                {{ $isBooked ? 'Booked' : 'Book' }}
+                                                @if ($isBooked) aria-label="Réservé" @endif>
+                                                {{ $isBooked ? 'Réservé' : 'Réserver' }}
                                             </button>
                                         </form>
                                     </div>
@@ -104,8 +107,8 @@
                             @endforeach
                         </div>
                     @empty
-                        <div class="px-6 py-12 text-center text-sm text-stone-500 dark:text-stone-400">No boats are
-                            available to reserve.</div>
+                        <div class="px-6 py-12 text-center text-sm text-stone-500 dark:text-stone-400">Aucun bateau n'est
+                            disponible à la réservation.</div>
                     @endforelse
                 </div>
             </div>

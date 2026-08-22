@@ -4,6 +4,14 @@ use App\Models\Boat;
 use App\Models\Reservation;
 use App\Models\User;
 
+test('a regular user is redirected to reservations from the admin dashboard', function () {
+    $user = User::factory()->create();
+
+    $this->actingAs($user)
+        ->get(route('admin.index'))
+        ->assertRedirect(route('reservations.index'));
+});
+
 test('an admin can move a boat outside the warehouse', function () {
     $admin = User::factory()->create(['is_admin' => true]);
     $boat = Boat::forceCreate(['color' => 'Rouge', 'position' => 2]);
