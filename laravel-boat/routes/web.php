@@ -33,8 +33,4 @@ Route::post('/admin/boats/{boat}/inside', [AdminDashboardController::class, 'mov
     ->name('admin.boats.move-inside')
     ->middleware(['auth', 'admin']);
 
-// Route::middleware(['auth', 'verified'])->group(function () {
-//     Route::inertia('dashboard', 'dashboard')->name('dashboard');
-// });
-
 require __DIR__ . '/settings.php';

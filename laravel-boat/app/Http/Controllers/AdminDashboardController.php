@@ -44,7 +44,6 @@ class AdminDashboardController extends Controller
     public function moveInside(Boat $boat)
     {
         $nextPosition = ((int) Boat::whereNotNull('position')->max('position')) + 1;
-
         $boat->update(['position' => $nextPosition]);
 
         return to_route('admin.index', ['reorganize' => 1]);

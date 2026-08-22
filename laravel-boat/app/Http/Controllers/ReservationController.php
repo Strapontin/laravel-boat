@@ -20,7 +20,7 @@ class ReservationController extends Controller
             'reservations' => function ($query) use ($dates) {
                 $query->whereBetween('date', [$dates->first(), $dates->last()]);
             }
-        ])->orderBy('position')->get();
+        ])->get();
 
         return view('reservations.index', compact('boats', 'dates'));
     }
